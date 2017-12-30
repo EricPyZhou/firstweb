@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+*/*通配符*/{
+margin:0;
+padding:0;/*内边距*/
+}
+body{
+background:url("https://images2.alphacoders.com/598/598673.jpg")
+}
+#nav{
+width:950px;
+height:500px;
+/*background:#933; 意思是99 33 33*/
+background:rgba(0,0,0,0);
+margin:100px auto;
+}
+#nav ul li{
+position:relative;
+list-style:none;/*去除前面的小黑点*/
+float:left;
+width:180px;
+height:105px;
+background:rgba(0,0,0,0.5);/*最后一个是透明0-1*/
+margin:30px 5px;
+}
+#nav ul li.six{
+margin-left:100px;
+}
+/*#nav ul li div{
+position:absolute;（跟着父类及父类网上的relative/absolute/fixed走）（相对于拥有定位属性（刚才三个）的最近的父元素定位，如果所有的父元素都没有定位属性就相对于文档来定位）
+left:0;
+top:0; 
+width:180px;
+height:105px;
+background:rgba(0,0,0,0.5);
+}
+.left{
+transform:rotate(60deg);
+}
+.right{
+transform:rotate(-60deg);
+}*/
+#nav ul li:before,#nav ul li:after{/*css伪类,在标签内容之前添加的内容(li)*/
+content:"";/*这个statement不能省略*/
+position:absolute;
+left:0;
+top:0;
+width:180px;
+height:105px;
+background:rgba(0,0,0,0.5);
+transform:rotate(60deg);
+}
+#nav ul li:after{
+transform:rotate(-60deg);
+}
+#nav ul li img:hover{
+transform:rotate(360deg) scale(1.4);
+transition:0.5s;
+}
+#nav ul li:hover{
+transform:scale(1.4);
+}
+#nav ul li img{
+position:absolute;
+left:0;
+top:0;
+right:0;
+bottom:0;
+margin:auto;
+z-index:10;/*越大越往前*/
+}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+<div id="nav"><!-- css样式来修饰div的宽度 高度 位置 边框,这个id不可重复 -->
+<ul>
+<li>
+<a href=https://www.google.ca target="_blank">
+<img src="C:\Users\TF2016\eclipse-workspace\hello\images\unnamed.PNG" 
+style="width: 180px;"></a>
+</li>
+<li>
+<a href=https://www.amazon.ca target="_blank">
+<img src="C:\Users\TF2016\eclipse-workspace\hello\images\amazon.PNG" 
+style="width: 180px;"></a>
+</li>
+<li>
+<a href=https://www.baidu.com target="_blank">
+<img src="C:\Users\TF2016\eclipse-workspace\hello\images\baidu.PNG" 
+style="width: 170px;"></a>
+</li>
+<li>
+<a href=https://www.taobao.com target="_blank">
+<img src="C:\Users\TF2016\eclipse-workspace\hello\images\taobao.PNG" 
+style="width: 170px;"></a>
+</li>
+<li>
+<a href=https://www.youtube.com target="_blank">
+<img src="C:\Users\TF2016\eclipse-workspace\hello\images\youtubr.PNG" 
+style="width: 180px;"></a>
+</li>
+<li class = "six"><!-- 可重复的 -->
+<a href=https://www.bilibili.com target="_blank">
+<img src="C:\Users\TF2016\eclipse-workspace\hello\images\bilibili.PNG" 
+style="width: 160px;"></a>
+</li>
+<li>
+<img src="">
+</li>
+<li>
+<img src="">
+</li>
+<li>
+<img src="">
+</li>
+<li>
+<img src="">
+</li>
+<li>
+<img src="">
+</li>
+<li>
+<img src="">
+</li>
+<li>
+<img src="">
+</li>
+<li>
+<img src="">
+</li>
+</ul>
+</div>
+</body>
+</html>
