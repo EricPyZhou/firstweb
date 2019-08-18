@@ -47,8 +47,72 @@ h4{
     margin-bottom: 0;
 }
 
+
+
 p{
     margin: 20px 0;
     color:#8D8273;
     line-height: 24px;
 }
+
+img{
+    margin: 20px 0;
+    width: 100%;
+}
+
+button{
+    outline: none;
+    border: none;
+    margin: 18px 0;
+    padding: 20px 40px;
+    background: #FFD152;
+    font-family: Roboto;
+    color: #282627;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+i{
+    font-size: 42px;
+    letter-spacing: 14px;
+}
+
+
+
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: #343233;
+    position: fixed;
+}
+ 
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 0;
+    color: #8D8273;
+
+    transition: 1s;
+}
+
+nav a:hover{
+    color: #6c6c6c;
+}
+/*
+nav a#toggle-btn{
+    display: none;
+}
+*/

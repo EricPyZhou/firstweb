@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+//import {SkiDayCounter} from './index'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component{
+  
+  SkiDayCounter = () => {
+    return(<div>
+      <p>Total Days: 1</p>
+    </div> )
+  }
+ 
+  render(){
+    return (
+      <div>
+        <this.SkiDayCounter />
+          <p>
+            Edit and save to reload.
+          </p>
+      </div>
+    );
+  }
 }
-
-export default App;
